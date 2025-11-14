@@ -5,6 +5,7 @@
     background-color: #f4f4f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
   }
    
   .book-collection h1 {
@@ -15,7 +16,7 @@
   .book-collection input {
     padding: 10px;
     margin: 10px;
-    width: 200px;
+    /* width: 200px; */
     border-radius: 4px;
     border: 1px solid #ccc;
   }
@@ -28,10 +29,12 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 180px;
   }
   
   .book-collection button:hover {
     background-color: #45a049;
+  
   }
   
   .book-collection ol {
@@ -60,4 +63,62 @@
   .book-collection li button:hover {
     background-color: #c0392b;
   }
+  
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+  /* Style wrapper for rating select so it's consistent with other inputs */
+  .select-rating {
+    margin: 10px 0;
+  }
+
+  .select-rating select {
+    padding: 10px;
+    /* width: 200px; */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: white;
+  }
+
+  .select-rating select:disabled {
+    color: #999;
+  }
+
+/* Fields inside each book item */
+.book-item .field {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.book-item .label {
+  min-width: 90px;
+  font-weight: 700;
+  color: #2d3e50;
+}
+
+.book-item .value {
+  color: #333;
+  word-break: break-word;
+}
+
+.delete-btn {
+  margin-top: 8px;
+  background-color: #e74c3c;
+  padding: 8px 12px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+
+  
   

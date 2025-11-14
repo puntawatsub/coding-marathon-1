@@ -2,41 +2,28 @@
 
 ## 1. Functionality
 - **Does the component meet the requirements?**
-  - [ ] Does it handle all the specified features (e.g., adding, removing, or updating books)?
-        I used useState to store the input values and the list of items.  
-        All inputs are controlled, with value and onChange.  
-        I used .map() to show all items on the page.  
-        I added add item and delete item functions.  
-        I made a separate Item.jsx component to display each cart item.   
-
-  - [ ] Are edge cases handled (e.g., empty inputs, duplicate entries)?
-        I used required so users cannot leave important fields empty.  
-        Duplicate items are allowed, which is fine for the given task.
-
-  - [ ] Are there any bugs or unexpected behaviors?
-        At the beginning there was an error of adding and deleting items. And fixed it accordingly.  
+  - [yes] Does it handle all the specified features (e.g., adding, removing, or updating books)?
         
-- **How well does the component integrate with other parts of the application?**
-  - [ ] Are props and state managed appropriately?
-        Props and state are handled well. The Item component gets the item and delete function without any problems.  
+  - [yes] Are edge cases handled (e.g., empty inputs, duplicate entries)?
+      
+  - [No] Are there any bugs or unexpected behaviors?
+      
+      - **How well does the component integrate with other parts of the application?**
+  - [yes] Are props and state managed appropriately?
 
 ## 2. Code Quality
 - **Readability**
-  - [ ] Is the code easy to understand for other developers?
-        My code is easy to read because the names are clear.
-
-  - [ ] Are variable and function names descriptive and meaningful?
+  - [yes] Is the code easy to understand for other developers?
+       
+  - [yes] Are variable and function names descriptive and meaningful?
         The variable names are clear and meaningful.  
 
 - **Reusability**
-  - [ ] Can the component or parts of it be reused in other parts of the application?
-        The Item component can be reused anywhere else in the app if needed.  
-        The form structure can also be reused for other components.    
-
+  - [yes] Can the component or parts of it be reused in other parts of the application?
+       
 - **Comments and Documentation**
-  - [ ] Are there comments explaining complex logic?
-        The logic is simple and easy to follow, so many comments were not necessary.  
-
+  - [No] Are there comments explaining complex logic?
+        
   - [ ] Is there documentation for how to use the component?  
         The code structure is clear enough without extra documentation.  
 
@@ -48,11 +35,8 @@
   - [ ] Is the component optimized for large datasets (if applicable)?
 
 - **State Management**
-  - [ ] Is state managed efficiently (e.g., minimal state, derived state)?
-  - [ ] Are hooks (e.g., `useState`, ) used correctly?
-        State is managed correctly using multiple useState hooks.    
-        The items list uses a single state array, which is the correct pattern.  
-        Hooks are used properly.  
+  - [yes] Is state managed efficiently (e.g., minimal state, derived state)?
+  - [yes] Are hooks (e.g., `useState`, ) used correctly?
 
 ## 4. Overall Assessment
 - **Strengths**

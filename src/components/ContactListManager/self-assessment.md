@@ -6,6 +6,7 @@
 
   - [x] Does it handle all the specified features (e.g., adding, removing, or updating books)?
   - [x] Are edge cases handled (e.g., empty inputs, duplicate entries)?
+  - Empty inputs are handled but not duplicates
   - [ ] Are there any bugs or unexpected behaviors?
 
 - **How well does the component integrate with other parts of the application?**
@@ -49,6 +50,7 @@
   - It works well.
   - Reusable
   - Readability
+  - Empty inputs handled
 
 - **Areas for Improvement**
 

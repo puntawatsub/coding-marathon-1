@@ -6,6 +6,7 @@
 
   - [x] Does it handle all the specified features (e.g., adding, removing, or updating books)?
   - [x] Are edge cases handled (e.g., empty inputs, duplicate entries)?
+    - empty inputs are handled but not duplicate entries
   - [ ] Are there any bugs or unexpected behaviors?
 
 - **How well does the component integrate with other parts of the application?**
@@ -44,6 +45,7 @@
   - List the strengths of the component.
     - Very Reusable (uses for loop to check each fields)
     - No bugs
+    - empty inputs handled
 
 - **Areas for Improvement**
 

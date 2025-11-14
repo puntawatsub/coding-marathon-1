@@ -5,6 +5,7 @@
     background-color: #f4f4f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
   }
    
   .book-collection h1 {
@@ -61,3 +62,8 @@
     background-color: #c0392b;
   }
   
+  .input-section {
+  display: flex;
+  flex-direction: column;
+  align-items:left;
+}

@@ -3,6 +3,7 @@ import './ContactListManager.css'
 import Contact from './Contact'
 
 function ContactListManager() {
+  // State for the list of contacts
   const [contacts, setContacts] = useState([])
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -12,32 +13,44 @@ function ContactListManager() {
   const [website, setWebsite] = useState('')
   const [favorite, setFavorite] = useState(false)
 
+  // Handle input change for new  name
   function handleNameChange(event) {
     setName(event.target.value)
   }
-
+  // Handle input change for new email
   function handleEmailChange(event) {
     setEmail(event.target.value)
   }
+  // Handle input change a new jobtitle
   function handleJobTitleChange(event) {
     setJobTitle(event.target.value)
   }
+  //Handle input change a new birthday
   function handleBirthdayChange(event) {
     setBirthday(event.target.value)
   }
+  // Handle input change a new note
   function handleNotesChange(event) {
     setNotes(event.target.value)
   }
-
+  // Handle input change a new website
   function handleWebsiteChange(event) {
     setWebsite(event.target.value)
   }
+  //Handle input change a new favorite
   function handleFavoriteChange(event) {
     setFavorite(event.target.checked)
   }
 
   function addContact() {
-    if (name.trim() !== '' && email.trim() !== '') {
+    if (
+      name.trim() !== '' &&
+      email.trim() !== '' &&
+      jobTitle.trim() !== '' &&
+      birthday.trim() !== '' &&
+      notes.trim() !== '' &&
+      website.trim() !== ''
+    ) {
       setContacts((c) => [
         ...c,
         { name, email, jobTitle, birthday, notes, website, favorite },

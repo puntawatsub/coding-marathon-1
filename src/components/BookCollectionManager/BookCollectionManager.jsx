@@ -22,7 +22,13 @@ function BookCollectionManager() {
 
   // Add a new book to the list
   function addBook() {
-    if (newBook.title.trim() !== "" && newBook.author.trim() !== "") {
+    if (newBook.title.trim() !== "" && 
+    newBook.author.trim() !== "" &&
+    newBook.genre.trim() !== "" &&
+    newBook.language.trim() !== "" &&
+    newBook.edition.trim() !== "" &&
+    newBook.pages.trim() !== "" &&
+    newBook.rating.trim() !== ""  ) {
       setBooks((b) => [...b, newBook]);
       setNewBook({
         title: "",
@@ -87,13 +93,20 @@ function BookCollectionManager() {
           value={newBook.language}
           onChange={handleInputChange}
         />
-        <input
-          type="number"
+        <div className="select-rating">
+        <select 
           name="rating"
-          placeholder="Enter rating..."
           value={newBook.rating}
           onChange={handleInputChange}
-        />
+        > 
+        <option value="" disabled> Select a rating</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        </select>
+        </div>
 
         <button onClick={addBook}>Add Book</button>
       </div>
